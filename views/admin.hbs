@@ -1,0 +1,96 @@
+<html lang='en'>
+  <head>
+    <meta charset='UTF-8' />
+    <meta http-equiv='X-UA-Compatible' content='IE=edge' />
+    <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+    <link rel='stylesheet' href='static/css/style.css' />
+    <title>admin</title>
+  </head>
+  <body>
+
+    <h1 style='text-align:center;'>Admin panel</h1>
+
+    <div class='wrapper'>
+
+      <nav class='nav'>
+        <ul style='padding:1em'>
+          <li><a href='/'>Home</a></li><br />
+          {{! <li><a href='/admin/nav-details'>Nav Details</a></li><br /> }}
+          <li><a href='#/admin/slider'>slider Details</a></li><br />
+          <li><a href='#/admin/banner'>banner Details</a></li><br />
+          <li><a href='#/admin/services'>services Details</a></li><br />
+          <li><a href='#/admin/contact-us'>contact-us Details</a></li><br />
+        </ul>
+      </nav>
+
+      <main class='main' style='min-width: 70vw ; margin:auto; height: auto;'>
+
+        <div class='nav-details' style='max-width:60vw; margin-top: 6em; '>
+
+          <h2 style='padding: 0 .7em;' class='h2'>Nav Details </h2>
+          <form name='admin' action='/process-admin' method='post'>
+            <ol>
+              <li>
+                <h3>brandName</h3>
+                <input
+                  name='brandName'
+                  type='text'
+                  id='brandName'
+                  value='{{details.brandName}}'
+                />
+              </li>
+
+              <li>
+                <h3>brandIconUrl</h3>
+                <input
+                  style='min-width: 30vw ;'
+                  type='text'
+                  name='brandIconUrl'
+                  id='brandIconUrl'
+                  value='{{details.brandIconUrl}}'
+                />
+              </li>
+
+              {{!-- <li>
+                <h3>Links</h3>
+                <br />
+
+                <table id='Links'>
+                  <tr>
+                    <th>Label</th>
+                    <th>Url</th>
+                  </tr>
+                  {{#each details.links}}
+                    <tr>
+                      <div class='input-noBorder'>
+                        <td><input
+                            type='text'
+                            name='label'
+                            value='{{this.label}}'
+                          /></td>
+                        <td><input
+                            type='text'
+                            name='url'
+                            value='{{this.url}}'
+                          /></td>
+                      </div>
+                    </tr>
+                  {{/each}}
+                </table>
+              </li><br /> --}}
+
+              <input
+                style='cursor:pointer;border-radius:.4em; padding:.8em 2em; background-color:rgb(74, 156, 39);color:white'
+                type='submit'
+                value='SAVE'
+              />
+
+            </ol>
+          </form>
+        </div>
+      </main>
+    </div>
+
+    <script src='static/js/index.js'></script>
+  </body>
+</html>

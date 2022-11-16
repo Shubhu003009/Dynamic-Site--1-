@@ -1,0 +1,110 @@
+.slider-image {
+  height: 646px !important;
+  object-fit: cover;
+}
+
+.service-icon {
+  font-size: 80px;
+}
+
+.background1 {
+  color: white;
+  background-color: #330033;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='253' height='253' viewBox='0 0 800 800'%3E%3Cg fill='none' stroke='%23404' stroke-width='1'%3E%3Cpath d='M769 229L1037 260.9M927 880L731 737 520 660 309 538 40 599 295 764 126.5 879.5 40 599-197 493 102 382-31 229 126.5 79.5-69-63'/%3E%3Cpath d='M-31 229L237 261 390 382 603 493 308.5 537.5 101.5 381.5M370 905L295 764'/%3E%3Cpath d='M520 660L578 842 731 737 840 599 603 493 520 660 295 764 309 538 390 382 539 269 769 229 577.5 41.5 370 105 295 -36 126.5 79.5 237 261 102 382 40 599 -69 737 127 880'/%3E%3Cpath d='M520-140L578.5 42.5 731-63M603 493L539 269 237 261 370 105M902 382L539 269M390 382L102 382'/%3E%3Cpath d='M-222 42L126.5 79.5 370 105 539 269 577.5 41.5 927 80 769 229 902 382 603 493 731 737M295-36L577.5 41.5M578 842L295 764M40-201L127 80M102 382L-261 269'/%3E%3C/g%3E%3Cg fill='%23505'%3E%3Ccircle cx='769' cy='229' r='6'/%3E%3Ccircle cx='539' cy='269' r='6'/%3E%3Ccircle cx='603' cy='493' r='6'/%3E%3Ccircle cx='731' cy='737' r='6'/%3E%3Ccircle cx='520' cy='660' r='6'/%3E%3Ccircle cx='309' cy='538' r='6'/%3E%3Ccircle cx='295' cy='764' r='6'/%3E%3Ccircle cx='40' cy='599' r='6'/%3E%3Ccircle cx='102' cy='382' r='6'/%3E%3Ccircle cx='127' cy='80' r='6'/%3E%3Ccircle cx='370' cy='105' r='6'/%3E%3Ccircle cx='578' cy='42' r='6'/%3E%3Ccircle cx='237' cy='261' r='6'/%3E%3Ccircle cx='390' cy='382' r='6'/%3E%3C/g%3E%3C/svg%3E");
+}
+.background2 {
+  color: white;
+  background-color: #000000;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='250' height='30' viewBox='0 0 1000 120'%3E%3Cg fill='none' stroke='%23222222' stroke-width='10' %3E%3Cpath d='M-500 75c0 0 125-30 250-30S0 75 0 75s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 45c0 0 125-30 250-30S0 45 0 45s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 105c0 0 125-30 250-30S0 105 0 105s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 15c0 0 125-30 250-30S0 15 0 15s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500-15c0 0 125-30 250-30S0-15 0-15s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 135c0 0 125-30 250-30S0 135 0 135s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+body {
+  margin: 0;
+}
+* {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  list-style-type: none;
+}
+.nav-details {
+  max-width: 80vw;
+  margin: auto;
+  height: 100vh;
+}
+.input-noBorder input {
+  border: none;
+}
+#Links {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: auto;
+}
+#Links td,
+#Links th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+#Links tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+#Links tr:hover {
+  background-color: #ddd;
+}
+#Links th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04aa6d;
+  color: white;
+}
+h1 {
+  padding: 0.5em 0;
+  margin: 0;
+  letter-spacing: 0.6rem;
+  font-family: monospace;
+  font-size: 2.3rem;
+}
+.h2 {
+  border-radius: 0.2em;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  display: inline-block;
+  font-family: 'Franklin GothicMedium', 'Arial Narrow', Arial, sans-serif;
+  padding: 0.1rem 0.4em;
+  margin: 0;
+  font-size: 2rem;
+  background-color: rgb(4, 113, 255);
+  color: rgb(255, 226, 37);
+}
+.wrapper {
+  display: flex;
+}
+.nav {
+  height: 50vh;
+  position: sticky;
+  top: 3em;
+  min-width: 17vw;
+  background-color: #061621;
+}
+.main {
+  background-color: #f2f2f2;
+}
+.main {
+  border: 5px solid #222;
+  background-color: white;
+  border-radius: 10px;
+}
+.nav li {
+  font-size: 1.4em;
+}
+.nav a {
+  font-weight: bold;
+  font-size: larger;
+  font-family: 'Courier New', Courier, monospace;
+  color: white;
+}
+.nav a:hover {
+  color: rgb(255, 226, 37);
+}
+.nav a:active {
+  color: rgb(255, 118, 118);
+}
