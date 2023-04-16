@@ -1,17 +1,22 @@
-const express = require("express");
+const express = require('express');
 const app = express();
 
-const routes = require("./routes/main");
-const Detail = require("../src/models/detail");
-const Slider = require("./models/slider");
-const Services = require("./models/service");
+// Routes imports
+const routes = require('./routes/main');
 
-const dotenv = require("dotenv");
+// Modals imports
+const Detail = require('./models/detail');
+const Slider = require('./models/slider');
+const Services = require('./models/service');
+
+// Environment Varials
+const dotenv = require('dotenv');
 dotenv.config();
 
-const mongoose = require("mongoose");
+// Mongoose setup
+const mongoose = require('mongoose');
 mongoose.connect(process.env.MONGO_URI, () => {
-  console.log("DB connected");
+  console.log('DB connected');
 });
 
 // Detail.create({
@@ -84,7 +89,7 @@ mongoose.connect(process.env.MONGO_URI, () => {
 //   }
 // );
 
-const bodyParser = require("body-parser");
+const bodyParser = require('body-parser');
 app.use(bodyParser.urlencoded({ extended: true }));
 
 // const ejs = require("ejs");
@@ -99,14 +104,14 @@ app.use(bodyParser.urlencoded({ extended: true }));
 // app.engine("hbs", hbs.engine);
 // app.set("views", path.join(__dirname, "views"));
 
-const hbs = require("hbs");
-app.set("view engine", "hbs");
-app.set("views", "views");
-hbs.registerPartials("views/partials");
+const hbs = require('hbs');
+app.set('view engine', 'hbs');
+app.set('views', 'views');
+hbs.registerPartials('views/partials');
 
-app.use("/static", express.static("public"));
+app.use('/static', express.static('public'));
 app.listen(process.env.PORT, () => {
-  console.log("server started");
+  console.log('server started http://localhost:8000');
 });
 
-app.use("/", routes);
+app.use('/', routes);

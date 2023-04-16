@@ -7,7 +7,6 @@ const Detail = mongoose.Schema({
     {
       label: String,
       url: String,
-      details: String,
     },
   ],
 });

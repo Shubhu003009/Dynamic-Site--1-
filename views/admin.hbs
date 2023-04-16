@@ -28,7 +28,7 @@
         <div class='nav-details' style='max-width:60vw; margin-top: 6em; '>
 
           <h2 style='padding: 0 .7em;' class='h2'>Nav Details </h2>
-          <form name='admin' action='/process-admin' method='post'>
+          <form name='admin' action='/process-admin' method='post'><br />
             <ol>
               <li>
                 <h3>brandName</h3>
@@ -38,7 +38,7 @@
                   id='brandName'
                   value='{{details.brandName}}'
                 />
-              </li>
+              </li><br />
 
               <li>
                 <h3>brandIconUrl</h3>
@@ -49,11 +49,18 @@
                   id='brandIconUrl'
                   value='{{details.brandIconUrl}}'
                 />
-              </li>
+              </li><br />
 
-              {{!-- <li>
+              <li>
                 <h3>Links</h3>
-                <br />
+
+                <div>1.</div><br />
+                <input
+                  type='text'
+                  id='link1'
+                  name='link1'
+                  value='{{details.link1}}'
+                />
 
                 <table id='Links'>
                   <tr>
@@ -77,7 +84,7 @@
                     </tr>
                   {{/each}}
                 </table>
-              </li><br /> --}}
+              </li><br />
 
               <input
                 style='cursor:pointer;border-radius:.4em; padding:.8em 2em; background-color:rgb(74, 156, 39);color:white'

@@ -3,6 +3,26 @@
   object-fit: cover;
 }
 
+/* .slide {
+  animation: changeImg 20s linear infinite;
+}
+@keyframes changeImg {
+  0% {
+    background-image: url('../images/img1.jpg');
+  }
+  25% {
+    background-image: url('../images/img2.jpg');
+  }
+  50% {
+    background-image: url('../images/img3.jpg');
+  }
+  75% {
+    background-image: url('../images/img4.jpg');
+  }
+  100% {
+    background-image: url('../images/img1.jpg');
+  } */
+}
 .service-icon {
   font-size: 80px;
 }
